@@ -31,6 +31,11 @@ describe/
 - Python 3.9+
 - pip / virtualenv (for the server)
 - [Gradio](https://gradio.app/) dependencies (see client README)
+- Client can be a simple VM (I run a 1 OCPU - 16GB RAM - 50 GB HD on Oracle Cloud)
+- Backend must be a GPU instance (I run an A10 - 100 GB HD on Oracle Cloud)
+- Networking is up to you. Client and Backend must be able to communicate. Client must be visible from the internet.
+- Files are stored in Oracle Cloud Storage. Authentication is up to you. I used Instance Principal Authentication.
+
 
 ---
 
